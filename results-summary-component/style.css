@@ -1,14 +1,42 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+    font-weight: 500;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'HankenGrotesk';
 }
 
 :root {
-    --color-primary: #3700ff;
-    --color-secondary: #9900ff;
-    --background-color: rgb(236, 255, 255);
+    --color-primary: #6643ff;
+    --color-secondary: #3327eb;
+    --background-color: #fdfffe;
     --color-text-primary: white;
-    --color-text-secondary: rgb(201, 201, 201);
+    --color-text-secondary: #cbcbff;
+    --color-reaction: #f55250;
+    --color-memory: #ffba31;
+    --color-verbal: #3cdaaa;
+    --color-visual: #1921c4;
 }
 
 body {
@@ -17,15 +45,18 @@ body {
 
 main {
     background-color:var(--color-text-primary);
-    width: 32rem;
+    width: 34rem;
     border-radius: 30px;
-    box-shadow: 1px 1px 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     margin: 3rem auto;
     display: grid;
-    grid-template-columns: 16rem 16rem;
+    grid-template-columns: 17rem 17rem;
 }
 
 .pontuacao-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     padding: 2rem;
     background: linear-gradient(var(--color-primary), var(--color-secondary));
@@ -45,7 +76,7 @@ main {
     width: 10rem;
     height: 10rem;
     border-radius: 5rem;
-    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    background: linear-gradient(#4f24cb, #4734f0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,26 +88,93 @@ main {
     font-size: 76px;
 }
 
+.pontuacao-geral h1 {
+    font-size: 20px;
+}
+
 .pontuacao-geral h3 {
+    font-size: 24px;
     color: var(--color-text-primary);
 }
 
 .potuacao-detalhada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1.5rem;
     width: 14rem;
 }
 
+.potuacao-detalhada h2 {
+    font-size: 20px;
+}
+
+.reaction {
+    background-color: rgba(245, 82, 80, .1);
+}
+
+.memory {
+    background-color: rgba(255, 186, 49, .1);
+}
+
+.verbal {
+    background-color: rgba(60, 218, 170, .1);
+}
+
+.visual {
+    background-color: rgba(25, 33, 196, .1);
+}
+
 .potuacao-detalhada article, .t-detalhada, .detalhada {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: .5rem .25rem .25rem .25rem;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+}
+
+.reaction h4 {
+    color: var(--color-reaction);
+    margin-left: .2rem;
+}
+
+.memory h4 {
+    color: var(--color-memory);
+    margin-left: .2rem;
+}
+
+.verbal h4 {
+    color: var(--color-verbal);
+    margin-left: .2rem;
+}
+
+.visual h4 {
+    color: var(--color-visual);
+    margin-left: .2rem;
+}
+
+.sum-pontuacao {
+    margin-right: .4rem;
+    font-weight: 600;
+}
+
+.por-cem {
+    color: var(--color-text-secondary);
+    font-weight: 600;
 }
 
 .botao {
-    width: 12rem;
+    width: 14rem;
     height: 2.5rem;
     color: var(--color-text-primary);
     border: 0;
     border-radius: 1.25rem;
+    background: linear-gradient(#303753, #2e3758);
+    cursor: pointer;
+}
+
+.botao:hover {
     background: linear-gradient(var(--color-primary), var(--color-secondary));
 }
 
@@ -87,4 +185,22 @@ main {
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+/* Utilitários */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
 }
