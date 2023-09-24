@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #3700ff;
+    --color-secondary: #9900ff;
+    --background-color: rgb(236, 255, 255);
+    --color-text-primary: white;
+    --color-text-secondary: rgb(201, 201, 201);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    background-color:var(--color-text-primary);
+    width: 32rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 16rem 16rem;
+}
+
+.pontuacao-geral {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    border-radius: 30px;
+}
+
+.pontuacao-geral h1 {
+    color: var(--color-text-secondary);
+}
+
+.pontuacao-geral p {
+    color: var(--color-text-secondary);
+}
+
+.border-score {
+    margin: 1rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-score h2 {
+    color: var(--color-text-primary);
+    font-size: 76px;
+}
+
+.pontuacao-geral h3 {
+    color: var(--color-text-primary);
+}
+
+.potuacao-detalhada {
+    padding: 1.5rem;
+    width: 14rem;
+}
+
+.potuacao-detalhada article, .t-detalhada, .detalhada {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    width: 12rem;
+    height: 2.5rem;
+    color: var(--color-text-primary);
+    border: 0;
+    border-radius: 1.25rem;
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
