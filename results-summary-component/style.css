@@ -186,13 +186,13 @@ main {
 
 /* Responsividade */
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     main {
         display: flex;
         flex-direction: column;
     }
 
-    .pontuacao-geral h1, .pontuacao-geral h3 {
+    .pontuacao-geral h1, .pontuacao-geral h3, .pontuacao-detalhada h2 {
         font-size: 32px;
     }
 
@@ -206,8 +206,32 @@ main {
         font-size: 86px;
     }
 
-    .pontuacao-geral p {
+    .pontuacao-geral p, .pontuacao-detalhada article {
+        font-size: 28px;
+    }
+
+    .pontuacao-detalhada {
+        width: 31rem;
+    }
+
+    .pontuacao-detalhada article, .t-detalhada, .detalhada {
+        padding: .5rem .5rem .25rem .5rem;
+    }
+
+    .pontuacao-detalhada article {
+        margin-bottom: 1rem;
+    }
+
+    .botao {
+        width: 31rem;
+        height: 4rem;
+        border-radius: 2rem;
+        font-size: 28px;
+    }
+
+    .attribution {
         font-size: 24px;
+        text-align: center;
     }
 }
 
