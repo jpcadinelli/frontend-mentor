@@ -235,6 +235,43 @@ main {
     }
 }
 
+@media screen and (max-width: 425px) {
+    main {
+        max-width: 100%;
+         margin: 0;
+    }
+
+    .pontuacao-geral {
+        margin-top: -2rem;
+        padding-top: 5rem;
+    }
+
+    .pontuacao-detalhada {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .pontuacao-detalhada article, .pontuacao-detalhada h2 {
+        margin: .5rem 10%;
+        max-width: 80%;
+    }
+
+    .botao {
+        margin: 1rem 10%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pontuacao-detalhada article {
+        font-size: 22px;
+    }
+
+    .attribution {
+        font-size: 18px;
+    }
+}
+
 /* Utilitários */
 
 .mt-1 {
