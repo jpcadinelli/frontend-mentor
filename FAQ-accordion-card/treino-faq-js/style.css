@@ -56,3 +56,11 @@ section {
     max-height: 300px;
     visibility: visible;
 }
+
+.faq.active img {
+    transform: rotate(180deg);
+}
+
+img {
+    transition: transform .5s;
+}
