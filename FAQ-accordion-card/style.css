@@ -35,41 +35,36 @@ body {
 
 .imagens {
     width: 650px;
-    height: 550px;
+    min-height: 550px;
     margin-right: 3rem;
-    background: url('./images/illustration-woman-online-desktop.svg') bottom 106px left -78px no-repeat, url('./images/bg-pattern-desktop.svg')  bottom -135px left -571px no-repeat;
+    background: url('./images/illustration-woman-online-desktop.svg') top 90px left -78px no-repeat, url('./images/bg-pattern-desktop.svg')  top -235px left -571px no-repeat;
 }
 
 .imagens img {
     position: relative;
-    top: 204px;
+    bottom: -210px;
     left: -125px;
 }
 
-.faq h1 {
+.faqs h1 {
     font-size: 32px;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
+.faq {
+    cursor: pointer;
+}
+
 .inline {
-    margin-right: 3rem;
-}
-
-.checkbox {
-    /* visibility: hidden; */
-}
-
-.checkbox:checked {
-    color: var(--Very-dark-desaturade-blue);
-    font-weight: 700;
-}
-
-.pergunta {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.pergunta {
     text-decoration: none;
     color: var(--dark-grayish-blue);
     font-size: 16px;
@@ -80,15 +75,11 @@ body {
     color: var(--soft-red);
 }
 
-.clique {
-    color: var(--Very-dark-desaturade-blue);
-    font-weight: 700;
-}
-
 .resposta {
     visibility: hidden;
     color: var(--dark-grayish-blue);
-    margin-right: 3rem;
+    max-height: 0;
+    margin: 1rem 3rem 1rem 0rem;
 }
 
 article hr {
@@ -102,4 +93,18 @@ article hr {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.faq.active .pergunta {
+    color: var(--Very-dark-desaturade-blue);
+    font-weight: 700;
+}
+
+.faq.active .inline img {
+    transform: rotate(180deg);
+}
+
+.faq.active .resposta {
+    visibility: visible;
+    max-height: 300px;
 }

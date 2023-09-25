@@ -1,9 +1,7 @@
-function validate() {
-    if (document.getElementById('p1').checked) {
-        $('pergunta').addClass('clique');
-        $('clique').removeClass('pergunta');
-    } else {
-        $('clique').addClass('pergunta');
-        $('pergunta').removeClass('clique');
-    }
-}
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+})
