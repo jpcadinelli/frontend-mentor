@@ -121,3 +121,33 @@ p {
 .attribution a { 
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        background: url("./images/pattern-background-mobile.svg") no-repeat;
+        background-size: 100% auto;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .container {
+        width: 350px;
+        margin: 10vh auto;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .descricao {
+        width: 270px;
+    }
+
+    .plano {
+        width: 280px;
+    }
+
+    .botao {
+        width: 304px;
+        padding: .75rem;
+    }
+}
