@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url("./images/pattern-background-desktop.svg") no-repeat;
+    background-size: 100% auto;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 15vh auto;
+    background: white;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 1px 1px 25px hsl(224, 23%, 55%, .5);
+}
+
+.primeira-img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.container h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-size: 16px;
+    color: #646f8e;
+}
+
+.descricao {
+    width: 360px;
+    margin-bottom: 1rem;
+}
+
+.plano {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(225, 100%, 94%, .35);
+    border-radius: 10px;
+    width: 320px;
+    padding: .5rem .75rem;
+}
+
+.plano-esq {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-plano {
+    display: flex;
+    flex-direction: column;
+    margin-left: .75rem;
+}
+
+.info-plano h2 {
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.change:hover {
+    color: #746cf1;
+}
+
+.botao {
+    margin: 1.5rem auto;
+    padding: .5rem;
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;
+    width: 344px;
+    color: white;
+    background: hsl(245, 75%, 52%);
+    box-shadow: 1px 1px 15px hsl(224, 23%, 55%, .5);
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #746cf1;
+}
+
+.cancel {
+    color: #646f8e;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 3rem;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
