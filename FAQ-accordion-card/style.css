@@ -19,7 +19,7 @@
 body {
     background: linear-gradient(var(--soft-violet), var(--soft-blue));
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-size: 12px;
 }
 
@@ -40,10 +40,14 @@ body {
     background: url('./images/illustration-woman-online-desktop.svg') top 90px left -78px no-repeat, url('./images/bg-pattern-desktop.svg')  top -235px left -571px no-repeat;
 }
 
-.imagens img {
+.img-desk {
     position: relative;
     bottom: -210px;
     left: -125px;
+}
+
+.img-mobile {
+    visibility: hidden;
 }
 
 .faqs h1 {
@@ -107,4 +111,36 @@ article hr {
 .faq.active .resposta {
     visibility: visible;
     max-height: 300px;
+}
+
+@media screen and (max-width: 902px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 300px;
+        align-items: center;
+    }
+
+    .imagens {
+        background: url('./images/bg-pattern-mobile.svg') no-repeat;
+        background-size: 100%;
+        max-width: 80%;
+        margin-right: 0;
+    }
+
+    .img-desk {
+        visibility: hidden;
+    }
+
+    .img-mobile {
+        visibility: visible;
+        max-width: 100%;
+        margin-top: -450px;
+    }
+
+    .faqs {
+        margin-top: -400px;
+        margin-left: 3rem;
+    }
 }
