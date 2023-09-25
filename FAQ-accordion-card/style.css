@@ -53,14 +53,23 @@ body {
 }
 
 .inline {
+    margin-right: 3rem;
+}
+
+.checkbox {
+    /* visibility: hidden; */
+}
+
+.checkbox:checked {
+    color: var(--Very-dark-desaturade-blue);
+    font-weight: 700;
+}
+
+.pergunta {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-right: 3rem;
-}
-
-.pergunta {
     text-decoration: none;
     color: var(--dark-grayish-blue);
     font-size: 16px;
@@ -71,7 +80,7 @@ body {
     color: var(--soft-red);
 }
 
-.pergunta:active {
+.clique {
     color: var(--Very-dark-desaturade-blue);
     font-weight: 700;
 }
@@ -82,10 +91,15 @@ body {
     margin-right: 3rem;
 }
 
+article hr {
+    margin: 0 3rem 1.6rem 0;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
