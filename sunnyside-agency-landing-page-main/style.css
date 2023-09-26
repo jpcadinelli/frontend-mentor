@@ -52,6 +52,23 @@ header {
     height: 0; 
 }
 
+.nav {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: fixed;
+    background: #fffbf8;
+    top: 86px;
+    left: 5%;
+    text-align: center;
+}
+
+.menu.active .nav {
+    visibility: visible;
+    width: 90%;
+    height: auto;
+}
+
 .nav a {
     display: flex;
     flex-direction: column;
@@ -75,23 +92,6 @@ header {
     border-radius: 50px;
     text-transform: uppercase;
     font-size: 16px;
-}
-
-.nav {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    position: fixed;
-    background: #fffbf8;
-    top: 86px;
-    left: 5%;
-    text-align: center;
-}
-
-.menu.active .nav {
-    visibility: visible;
-    width: 90%;
-    height: auto;
 }
 
 .header .logo {
