@@ -34,10 +34,54 @@ header {
     justify-content: space-between;
 }
 
-.nav {
-    visibility: hidden;
+.triangulo {
+    /* visibility: hidden;
     width: 0;
-    height: 0;
+    height: 0; */
+    position: fixed;
+    top: 61px;
+    right: 5%;
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    border-right:25px solid #fffbf8; 
+}
+
+.nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;   
+    margin: 2rem 0; 
+}
+
+.nav a li {
+    list-style: none;
+}
+
+.contato {
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-desaturated-blue);
+    background: var(--Yellow);
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.nav {
+    /* visibility: hidden;
+    width: 0;
+    height: 0; */
+    position: fixed;
+    background: #fffbf8;
+    width: 90%;
+    height: auto;
+    top: 86px;
+    left: 5%;
+    text-align: center;
 }
 
 .header .logo {
@@ -283,7 +327,7 @@ footer nav ul {
     justify-content: space-around;
 }
 
-nav li {
+footer nav li {
     list-style: none;
     margin: 2rem 0;
 }
