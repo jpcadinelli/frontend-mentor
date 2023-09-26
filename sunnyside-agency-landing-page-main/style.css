@@ -35,17 +35,21 @@ header {
 }
 
 .triangulo {
-    /* visibility: hidden;
+    visibility: hidden;
     width: 0;
-    height: 0; */
+    height: 0;
     position: fixed;
     top: 61px;
     right: 5%;
-    width: 0; 
-    height: 0; 
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent; 
-    border-right:25px solid #fffbf8; 
+    border-right:25px solid #fffbf8;
+}
+
+.menu.active .triangulo {
+    visibility: visible;
+    width: 0; 
+    height: 0; 
 }
 
 .nav a {
@@ -74,16 +78,20 @@ header {
 }
 
 .nav {
-    /* visibility: hidden;
+    visibility: hidden;
     width: 0;
-    height: 0; */
+    height: 0;
     position: fixed;
     background: #fffbf8;
-    width: 90%;
-    height: auto;
     top: 86px;
     left: 5%;
     text-align: center;
+}
+
+.menu.active .nav {
+    visibility: visible;
+    width: 90%;
+    height: auto;
 }
 
 .header .logo {
@@ -92,7 +100,7 @@ header {
     height: auto;
 }
 
-.men-ham {
+.menu {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
