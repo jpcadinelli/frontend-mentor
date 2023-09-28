@@ -35,7 +35,7 @@ header {
 }
 
 .triangulo {
-    visibility: hidden;
+    display: none;
     width: 0;
     height: 0;
     position: fixed;
@@ -46,10 +46,12 @@ header {
     border-right:25px solid #fffbf8;
 }
 
-.menu.active .triangulo {
-    visibility: visible;
-    width: 0; 
-    height: 0; 
+.menu-ham {
+    visibility: hidden;
+}
+
+#opcoes:checked ~ .triangulo {
+    display: block;
 }
 
 .nav {
@@ -63,7 +65,7 @@ header {
     text-align: center;
 }
 
-.menu.active .nav {
+#opcoes:checked ~ .nav {
     visibility: visible;
     width: 90%;
     height: auto;
