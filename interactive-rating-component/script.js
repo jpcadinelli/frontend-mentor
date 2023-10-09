@@ -8,6 +8,8 @@ const escolha = document.getElementById('escolha');
 const escolhido = document.getElementById('escolhido');
 const submit = document.getElementById('submit');
 
+const resposta = document.querySelector('.resposta');
+
 let numero = null;
 
 select1.addEventListener('click', () => {
@@ -51,6 +53,9 @@ function limpaClick() {
 
 submit.addEventListener('click', () => {
     if (numero != null) {
+        resposta.innerHTML = `
+        You selected ${ numero } out of 5
+        `
         escolha.classList.add('display-none');
         escolhido.classList.remove('display-none');
     } else {
