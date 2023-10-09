@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Rating state start -->
-  <div id="escolha" class="escolha">
+  <div id="escolha" class="escolha display-none">
     <img src="./assets/image/icon-star.svg" alt="Ícone de estrela" class="card-icon">
     <h1>How did we do?</h1>
     <p class="descricao">Please let us know how we did with your support request. All feedback is appreciated 
@@ -33,15 +33,16 @@
           <!-- <input type="checkbox" id="5" name="fav_language" value="5" class="checkbox"> -->
           <label id="5" class="num">5</label>
         </div>
-        <input type="submit" value="Submit" id="submit" class="submit">
       </form>
+      <button id="submit" class="submit">submit</button>
   </div>
 
   <!-- Thank you state start -->
-  <div id="escolhido" class="escolha display-none">
+  <div id="escolhido" class="escolhido">
+    <img src="./assets/image/illustration-thank-you.svg" alt="Ícone de resposta" class="card-img">
     <p class="resposta">You selected <!-- Add rating here --> out of 5</p>
     <h2>Thank you!</h2>
-    <p class="descrição">We appreciate you taking the time to give a rating. If you ever need more support, 
+    <p class="descricao">We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
   </div>
 
