@@ -2,45 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive rating component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
   <!-- Rating state start -->
+  <div class="escolha">
+    <img src="./assets/image/icon-star.svg" alt="Ícone de estrela" class="card-icon">
+    <h1>How did we do?</h1>
+    <p class="descricao">Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+      <form>
+        <div class="numeros">
+          <input type="checkbox" id="1" name="fav_language" value="1" class="checkbox">
+          <label for="1" class="num">1</label>
 
-  How did we do?
+          <input type="checkbox" id="2" name="fav_language" value="2" class="checkbox">
+          <label for="2" class="num">2</label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+          <input type="checkbox" id="3" name="fav_language" value="3" class="checkbox">
+          <label for="3" class="num">3</label>
 
-  1 2 3 4 5
+          <input type="checkbox" id="4" name="fav_language" value="4" class="checkbox">
+          <label for="4" class="num">4</label>
 
-  Submit
-
-  <!-- Rating state end -->
+          <input type="checkbox" id="5" name="fav_language" value="5" class="checkbox">
+          <label for="5" class="num">5</label>
+        </div>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+  </div>
 
   <!-- Thank you state start -->
+  <div class="escolhido" style="display: none;">
+    <p class="resposta">You selected <!-- Add rating here --> out of 5</p>
+    <h2>Thank you!</h2>
+    <p class="descrição">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  </div>
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/jpcadinelli" target="_blank">jpcadinelli</a>.
