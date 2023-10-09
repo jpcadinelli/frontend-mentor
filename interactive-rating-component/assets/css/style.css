@@ -73,6 +73,11 @@ h1 {
     background: var(--Medium-Grey);
 }
 
+.checked:hover {
+    color: var(--White);
+    background: var(--Medium-Grey);
+}
+
 .checkbox {
     display: none;
 }
@@ -92,6 +97,10 @@ h1 {
 .submit:hover{    
     color: var(--Orange);
     background: var(--White);
+}
+
+.display-none {
+    display: none;
 }
 
 .attribution {
