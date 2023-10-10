@@ -11,25 +11,27 @@
 </head>
 <body>
   <main>
-    <h1>Age Calculator App</h1>
-    <div class="inputs">
-      <div class="input">
-        <h2>Day</h2>
-        <input type="text" placeholder="DD">
+    <form>
+      <h1>Age Calculator App</h1>
+      <div class="inputs">
+        <div class="input">
+          <h2>Day</h2>
+          <input type="text" placeholder="DD" id="dia">
+        </div>
+        <div class="input">
+          <h2>Month</h2>
+          <input type="text" placeholder="MM" id="mes">
+        </div>
+        <div class="input">
+          <h2>Year</h2>
+          <input type="text" placeholder="YYYY" id="ano">
+        </div>
       </div>
-      <div class="input">
-        <h2>Month</h2>
-        <input type="text" placeholder="MM">
+      <div class="fronteira">
+        <div class="linha"></div>
+        <button type="submit" class="button"><img src="./assets/images/icon-arrow.svg" alt="Arrow"></button>
       </div>
-      <div class="input">
-        <h2>Year</h2>
-        <input type="text" placeholder="YYYY">
-      </div>
-    </div>
-    <div class="fronteira">
-      <div class="linha"></div>
-      <button type="button" class="button"><img src="./assets/images/icon-arrow.svg" alt="Arrow"></button>
-    </div>
+    </form>
     <div class="resultado">
       <div class="result">
         <p class="num" id="years"><i>--</i></p>
