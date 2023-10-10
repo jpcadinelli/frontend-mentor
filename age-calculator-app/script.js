@@ -1,15 +1,15 @@
 // Pegando data de hoje
 const date = new Date()
 
-// console.log(date)
+console.log(date)
 
-const dayT = date.getDay()
-const monthT = date.getMonth()
+const dayT = date.getDate()
+const monthT = date.getMonth() + 1
 const yearT = date.getFullYear()
 
-// console.log(yearT)
-// console.log(monthT)
-// console.log(dayT)
+console.log(yearT)
+console.log(monthT)
+console.log(dayT)
 
 // 
 const btn = document.querySelector('.button')
@@ -36,57 +36,54 @@ btn.addEventListener('click', function(e) {
         if (yearT == valorAno) {
             if (monthT < valorMes) {
                 alert('Insira a data anterior à atual.')
-
-                var yearR = '--'
-                var monthR = '--'
-                var dayR = '--'
+                yearR = '--'
+                monthR = '--'
+                dayR = '--'
             } else if (monthT == valorMes && dayT < valorDia) {
                 alert('Insira a data anterior à atual.')
-
-                var yearR = '--'
-                var monthR = '--'
-                var dayR = '--'
+                yearR = '--'
+                monthR = '--'
+                dayR = '--'
             } else {
-                var yearR = 0
-                var monthR = Math.abs(monthT - valorMes)
+                yearR = 0
+                monthR = Math.abs(monthT - valorMes)
                 if (dayT < valorDia) {
                     monthR -= 1
-                    var dayR = Math.abs(dayT + (31 - valorDia))
+                    dayR = Math.abs(dayT + (31 - valorDia))
                 } else {
-                    var dayR = Math.abs(dayT - valorDia)
+                    dayR = Math.abs(dayT - valorDia)
                 }
             }
         } else {
             if (monthT < valorMes) {
-                var yearR = Math.abs(valorAno - yearT) - 1
-                var monthR = Math.abs(monthT - valorMes)
+                yearR = Math.abs(valorAno - yearT) - 1
+                monthR = Math.abs(monthT + (12 - valorMes))
                 if (dayT < valorDia) {
-                    monthR -= 1
-                    var dayR = Math.abs(dayT + (31 - valorDia))
+                    // monthR -= 1
+                    dayR = Math.abs(dayT + (31 - valorDia))
                 } else {
-                    var dayR = Math.abs(dayT - valorDia)
+                    dayR = Math.abs(dayT - valorDia)
                 }
             } else if (monthT == valorMes) {
-                var yearR = Math.abs(valorAno - yearT)
-                var monthR = 0
+                yearR = Math.abs(valorAno - yearT)
+                monthR = 0
                 if (dayT < valorDia) {
-                    var dayR = Math.abs(dayT + (31 - valorDia))
+                    dayR = Math.abs(dayT + (31 - valorDia))
                 } else {
-                    var dayR = Math.abs(dayT - valorDia)
+                    dayR = Math.abs(dayT - valorDia)
                 }
             } else {
-                var yearR = Math.abs(valorAno - yearT)
-                var monthR = Math.abs(monthT - valorMes)
+                yearR = Math.abs(valorAno - yearT)
+                monthR = Math.abs(monthT - valorMes)
                 if (dayT < valorDia) {
                     monthR -= 1
-                    var dayR = Math.abs(dayT + (31 - valorDia))
+                    dayR = Math.abs(dayT + (31 - valorDia))
                 } else {
-                    var dayR = Math.abs(dayT - valorDia)
+                    dayR = Math.abs(dayT - valorDia)
                 }
             }
         }
     }
-
     // Resposta no html
     respAno.innerHTML = `${yearR}`
     respMes.innerHTML = `${monthR}`
