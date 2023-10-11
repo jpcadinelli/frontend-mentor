@@ -44,6 +44,10 @@ btn.addEventListener('click', function(e) {
                 yearR = '--'
                 monthR = '--'
                 dayR = '--'
+            } else if (monthT == valorMes && dayT > valorDia) {
+                yearR = 0
+                monthR = 0
+                dayR = Math.abs(dayT - valorDia)
             } else {
                 yearR = 0
                 monthR = Math.abs(monthT - valorMes)
