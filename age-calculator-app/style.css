@@ -166,3 +166,52 @@ input:hover {
     color: black;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 850px) {
+    main {
+        width: 95%;
+    }
+
+    .inputs {
+        gap: 3vw;
+    }
+
+    input {
+        width: 17vw;
+        height: 9vw;
+        font-size: 3vw;
+    }
+
+    .button {
+        padding: 3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .legenda, .num {
+        font-size: 96px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .legenda, .num {
+        font-size: 56px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .legenda, .num {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .input h2 {
+        font-size: 2vw;
+    }
+
+    input {
+        padding: .2rem .5rem;
+    }
+}
