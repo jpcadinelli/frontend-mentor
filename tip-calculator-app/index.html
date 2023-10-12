@@ -2,43 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
+  <main>
+    <div class="div-form">
+      <div class="conta">
+        <h2>Bill</h2>
+        <form>
+          <input type="number" placeholder="0" id="conta">
+        </form>
+      </div>
+      <div class="gorjeta">
+        <h2>Select Tip %</h2>
+        <div class="gor-botoes">
+          <button class="gor-botao" type="button" id="gor-5">5%</button>
+          <button class="gor-botao" type="button" id="gor-10">10%</button>
+          <button class="gor-botao" type="button" id="gor-15">15%</button>
+          <button class="gor-botao scnd-line" type="button" id="gor-25">25%</button>
+          <button class="gor-botao scnd-line" type="button" id="gor-50">50%</button>
+          <input class="scnd-line" type="number" placeholder="Custom" id="gor-custom">
+        </div>
+      </div>
+      <div class="pessoas">
+        <h2>Number of People</h2>
+        <form>
+          <input type="number" placeholder="0" id="pessoas">
+        </form>
+      </div>
+    </div>
+    <div class="resultado">
+      <div>
+        <div class="gor-pessoa">
+          <div class="legenda">
+            <h4>Tip Amont</h4>
+            <p>/person</p>
+          </div>
+          <h3 id="gor-pessoa">$0.00</h3>
+        </div>
+        <div class="cont-pessoa">
+          <div class="legenda">
+            <h4>Total</h4>
+            <p>/person</p>
+          </div>
+          <h3 id="cont-pessoa">$0.00</h3>
+        </div>
+      </div>
+      <button type="reset" id="reset">Reset</button>
+    </div>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">jpcadinelli</a>.
+  </footer>
 </body>
 </html>
