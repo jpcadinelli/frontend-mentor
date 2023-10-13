@@ -99,6 +99,12 @@ form input::placeholder {
     color: var(--white);
     font-size: 20px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.gor-botao:hover, #reset:hover {
+    background-color: var(--light-grayish-cyan);    
+    color: var(--very-dark-cyan);
 }
 
 #gor-custom {
@@ -109,6 +115,7 @@ form input::placeholder {
     text-align: center;
     background-color: var(--very-light-grayish-cyan);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #gor-custom::placeholder {
@@ -125,6 +132,7 @@ form input::placeholder {
     background-position: 1rem center;
     background-color: var(--very-light-grayish-cyan);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .resultado {
@@ -172,6 +180,7 @@ form input::placeholder {
     text-transform: uppercase;
     color: var(--very-dark-cyan);
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* footer */
