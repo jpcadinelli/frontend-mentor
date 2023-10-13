@@ -30,8 +30,21 @@ body {
     justify-content: center;
 }
 
+.splitter {
+    position: fixed;
+    top: 5rem;
+    font-size: 40px;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-cyan);
+}
+
 main {
+    z-index: 2;
     width: 60%;
+    max-width: 864px;
+    min-width: 700px;
     height: auto;
     background: var(--white);
     display: flex;
@@ -66,12 +79,11 @@ main {
     cursor: pointer;
 }
 
-#conta:hover, #gor-custom:hover, #pessoas:hover {
+#conta:hover, #gor-custom:hover, .input-pessoas:hover {
     border: 2px solid var(--strong-cyan);
 }
 
-form input::placeholder {
-    padding: .5rem;
+#conta::placeholder, .input-pessoas::placeholder {
     color: var(--grayish-cyan);
 }
 
@@ -122,7 +134,7 @@ form input::placeholder {
     color: var(--dark-grayish-cyan);
 }
 
-#pessoas {
+.input-pessoas {
     font-size: 24px;
     border: none;
     width: 100%;
@@ -183,6 +195,43 @@ form input::placeholder {
     cursor: pointer;
 }
 
+.selecionado {
+    background-color: var(--strong-cyan);    
+    color: var(--very-dark-cyan);
+}
+
+.selecionado:hover {
+    background-color: var(--strong-cyan);    
+    color: var(--very-dark-cyan);
+}
+
+.num-pessoa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#aviso-pessoa {
+    color: red;
+}
+
+.oculto {
+    display: none;
+}
+
+.erro {
+    border: 2px solid red;
+}
+
+#conta, #gor-custom, .input-pessoas {
+    color: var(--very-dark-cyan);
+}
+
+#conta, .input-pessoas {
+    padding-right: .5rem;
+}
+
 /* footer */
 .attribution {
     font-size: 11px;
@@ -194,4 +243,73 @@ form input::placeholder {
 
 .attribution a {
     color: black; 
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        width: auto;
+        height: auto;
+        justify-content: start;
+    }
+
+    .splitter {
+        position: inherit;
+        margin: 2rem 0;
+    }
+
+    main {
+        width: 100%;
+        max-width: 425px;
+        min-width: 320px;
+        flex-direction: column;
+        gap: 2rem;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .div-form {
+        width: 80%;
+    }
+
+    .gorjeta h2 {
+        margin: 0;
+    }
+    
+    .scnd-line {
+        margin: 0;
+    }
+
+
+    .gor-botao, #gor-custom {
+        width: 47%;
+        margin-top: 1rem;
+    }
+
+    .resultado {
+        width: 80%;
+    }
+
+    .gor-pessoa {
+        margin-bottom: 0rem;
+    }
+
+    #gor-pessoa, #cont-pessoa {
+        font-size: 40px;
+    }
+
+    #reset {
+        margin-top: 2rem;
+    }
+
+    .attribution {
+        position: inherit;
+        background: var(--white);
+        max-width: 425px;
+        min-width: 320px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        border-radius: 20px 20px 0 0;
+    }
 }

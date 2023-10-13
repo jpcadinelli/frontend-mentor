@@ -10,13 +10,12 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <span class="splitter">spli<br>tter</span>
   <main>
     <div class="div-form">
       <div class="conta">
         <h2>Bill</h2>
-        <form>
-          <input type="number" placeholder="0" id="conta">
-        </form>
+        <input type="number" placeholder="0" id="conta" min="0">
       </div>
       <div class="gorjeta">
         <h2>Select Tip %</h2>
@@ -26,16 +25,15 @@
           <button class="gor-botao" type="button" id="gor-15">15%</button>
           <button class="gor-botao scnd-line" type="button" id="gor-25">25%</button>
           <button class="gor-botao scnd-line" type="button" id="gor-50">50%</button>
-          <input class="scnd-line" type="number" placeholder="Custom" id="gor-custom">
+          <input class="scnd-line" type="number" placeholder="Custom" id="gor-custom" min="0" max="100">
         </div>
       </div>
       <div class="pessoas">
         <div class="num-pessoa">
           <h2>Number of People</h2>
+          <span id="aviso-pessoa" class="oculto">Can't be zero.</span>
         </div>
-        <form>
-          <input type="number" placeholder="0" id="pessoas">
-        </form>
+        <input type="number" placeholder="0" id="pessoas" class="input-pessoas" min="0">
       </div>
     </div>
     <div class="resultado">
@@ -60,7 +58,7 @@
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">jpcadinelli</a>.
+    Coded by <a href="https://github.com/jpcadinelli" target="_blank">jpcadinelli</a>.
   </footer>
 </body>
 </html>
