@@ -63,6 +63,11 @@ main {
     background-position: 1rem center;
     background-color: var(--very-light-grayish-cyan);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#conta:hover, #gor-custom:hover, #pessoas:hover {
+    border: 2px solid var(--strong-cyan);
 }
 
 form input::placeholder {
