@@ -15,6 +15,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    background: var(--dark-gray);
 }
 
 main {
@@ -46,11 +47,12 @@ input {
     border: none;
     font-family: var(--font);
     cursor: pointer;
+    padding-left: 1rem;
+    font-size: 16px;
 }
 
 input::placeholder {
-    padding-left: 1rem;
-    font-size: 16px;
+    color: var(--dark-gray);
 }
 
 button {
@@ -74,7 +76,7 @@ button:hover {
     background-size: cover;
 }
 
-.resopostas {
+.respostas {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,6 +89,10 @@ button:hover {
     z-index: 5;
     padding: 1.5rem;
     border-radius: 20px;
+}
+
+.resposta {
+    width: 180px;
 }
 
 h2 {
@@ -107,7 +113,7 @@ h2 {
 
 .linha-vertical {
     border: 1px solid var(--dark-gray);
-    height: 60px;
+    height: 80%;
     width: 1px;
     margin: 0 1rem;
     opacity: .35;
