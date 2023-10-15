@@ -9,25 +9,42 @@
   <title>IP Address Tracker</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="./script.js"></script>
 </head>
 <body>
-<main class="info">
-
-  IP Address Tracker
-  
-  Search for any IP address or domain
-  
-  IP Address
-  Location
-  Timezone
-  UTC <!-- add offset value dynamically using the API -->
-  ISP
-</main>
+  <main class="info">
+    <h1>IP Address Tracker</h1>
+    <div class="input">
+      <input placeholder="Search for any IP address or domain">
+      <button type="button"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    <div class="resopostas">
+      <div class="resposta">
+        <h2 id="ip-address">IP Address</h2>
+        <p id="resp-id">192.212.174.101</p>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="resposta">
+        <h2 id="location">Location</h2>
+        <p id="resp-location">Brooklyn, NY, 10001</p>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="resposta">
+        <h2 id="timerzone">Timerzone</h2>
+        <p id="resp-timerzone">UTC -05:00</p>
+      </div>
+      <div class="linha-vertical"></div>
+      <div class="resposta">
+        <h2 id="isp">ISP</h2>
+        <p id="resp-isp">SpaceX Starlink</p>
+      </div>
+    </div>
+  </main>
   <div id="map"></div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/jpcadinelli" target="_blank">jpcadinelli</a>.
   </footer>
 </body>
 </html>

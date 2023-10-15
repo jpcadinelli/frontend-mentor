@@ -17,22 +17,121 @@ body {
     height: 100vh;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+h1 {
+    font-family: var(--font);
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+    height: 50px;
+    width: 500px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    font-family: var(--font);
+    cursor: pointer;
+}
+
+input::placeholder {
+    padding-left: 1rem;
+    font-size: 16px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--very-dark-gray);
+}
+
 .info {
+    width: 100%;
     height: 30%;
+    background: url('./images/pattern-bg-desktop.png') no-repeat;
+    background-size: cover;
+}
+
+.resopostas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    position: relative;
+    bottom: -30px;
+    height: auto;
+    width: 80%;
+    z-index: 5;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+}
+
+.resposta p {
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--very-dark-gray);
+    margin-top: .75rem;
+}
+
+.linha-vertical {
+    border: 1px solid var(--dark-gray);
+    height: 60px;
+    width: 1px;
+    margin: 0 1rem;
+    opacity: .35;
 }
 
 #map {
+    width: 100%;
     height: 70%;
+    z-index: 1;
 }
 
 .attribution {
-    position: fixed;
-    bottom: 1px;
-    width: 100vw;
     font-size: 11px;
     text-align: center;
+    margin: -22px auto 0 auto;
+    z-index: 9;
+    position: relative;
+    width: 250px;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    padding: .3rem;
+    border-radius: 5px;
 }
 
 .attribution a {
-    color: black;
+    color: black; 
 }
