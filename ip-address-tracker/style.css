@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: 'Rubik', sans-serif;;
+    --very-dark-gray: hsl(0, 0%, 17%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.info {
+    height: 30%;
+}
+
+#map {
+    height: 70%;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1px;
+    width: 100vw;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: black;
+}
