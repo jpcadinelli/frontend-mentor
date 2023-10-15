@@ -141,3 +141,20 @@ h2 {
 .attribution a {
     color: black; 
 }
+
+@media screen and (max-width: 767px) {
+    main {
+        background: url('./images/pattern-bg-mobile.png') no-repeat;
+        background-size: cover;
+    }
+
+    input {
+        width: 80vw;
+    }
+
+    .respostas {
+        flex-direction: column;
+        max-width: 80%;
+        width: auto;
+    }
+}
