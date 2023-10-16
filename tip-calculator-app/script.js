@@ -123,4 +123,7 @@ reset.addEventListener('click', () => {
     limpaConta()
     limpaPessoas()
     limpaResposta()
+    valorConta = null
+    gorjeta = null
+    numPessoas = null
 })
