@@ -61,7 +61,11 @@ h1, .numero-conselho {
 }
 
 .divisor {
+    background: url('./images/pattern-divider-desktop.svg') no-repeat;
+    background-size: contain;
     margin-bottom: 1rem;
+    width: 100%;
+    height: 20px;
 }
 
 .botao {
@@ -95,4 +99,23 @@ h1, .numero-conselho {
 
 .attribution a {
     color: var(--Light-Cyan);
+}
+
+@media screen and (max-width: 580px) {
+    main {
+        width: 310px;
+    }
+
+    h1, .numero-conselho {
+        font-size: 14px;
+    }
+    
+    .conselho {
+        font-size: 22px;
+    }
+
+    .divisor {
+        background: url('./images/pattern-divider-mobile.svg') no-repeat;
+        background-size: contain;
+    }
 }
