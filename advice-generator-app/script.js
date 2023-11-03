@@ -1,4 +1,6 @@
-function novoConselho() {
+const botao = document.querySelector('.botao')
+
+botao.addEventListener('click', () => {
     const url = 'https://api.adviceslip.com/advice'
     fetch(url).then(response => { 
             return response.json() 
@@ -7,4 +9,4 @@ function novoConselho() {
             document.querySelector('.numero-conselho').innerHTML = `#${adviceObj.id}`
             document.querySelector('.conselho').innerHTML = `"${adviceObj.advice}"`
         })
-}
+})

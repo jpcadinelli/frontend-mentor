@@ -76,6 +76,9 @@ h1, .numero-conselho {
     border-radius: 2rem;
     position: absolute;
     bottom: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao:hover {
